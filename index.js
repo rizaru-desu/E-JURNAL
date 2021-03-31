@@ -40,7 +40,7 @@ app.post("/API-Create", function (req, res, next) {
     })
     .then((userRecord) => {
       res.send({
-        message: "Successfully created new user: " + userRecord.email,
+        message: "Successfully created account: " + userRecord.email,
       });
     })
     .catch((error) => {
